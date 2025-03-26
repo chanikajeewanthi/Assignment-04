@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-03</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.7.2-web">
+
+    <style>
+
+        div{
+            width: 150px;
+            border-radius: 10%;
+            height: 80px;
+
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes move {
+            0%{
+                margin: 0;
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+            25%{
+                margin-top: 0;
+                margin-left: 90%;
+                background-color: yellow;
+                transform: rotate(360deg);
+            }
+            50%{
+                margin-left: 90%;
+                margin-top: 40%;
+                background-color: red;
+                transform: rotate(0deg);
+            }
+            75%{
+                margin-left: 0;
+                margin-top: 40%;
+                background-color: deeppink;
+                transform: rotate(360deg);
+            }
+            100%{
+                margin: 0;
+                background-color: orange;
+                transform: rotate(0deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+</html>

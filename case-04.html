@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-04</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.7.2-web">
+
+    <style>
+        div{
+            aspect-ratio: 1/1;
+            border: 2px solid red;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-name: water_drop;
+        }
+        @keyframes water_drop {
+            from{
+                opacity: 1;
+                width: 0;
+            }
+            to{
+                opacity: 0;
+                width: 300px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>
