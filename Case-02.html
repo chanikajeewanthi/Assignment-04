@@ -8,51 +8,45 @@
 
     <style>
 
-        body{
+        body {
             background-color: blue;
         }
-        div{
+        .circle-container {
             width: 250px;
             aspect-ratio: 1/1;
             background-color: #605f5f;
-            border-radius: 100%;
+            border-radius: 50%;
             border: 10px solid white;
-            border-top: 10px solid red;
-            /*border-bottom: 10px solid white;*/
-            /*border-left: 10px solid white;*/
-            /*border-right: 10px solid white;*/
-
-            transition: all 3000ms;
-
+            border-top-color: red;
             position: absolute;
             top: 0;
             bottom: 0;
             right: 0;
             left: 0;
             margin: auto;
+
+            transition: transform 2s linear;
         }
-        div:hover{
-            transform: rotate(180deg);
+        .circle-container:hover {
+            transform: rotate(360deg);
         }
-        div>div{
+        .circle-container > .text {
             color: white;
             font-size: xx-large;
-            font-family: SansSerif ;
+            font-family: SansSerif;
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 100%;
         }
-
-
     </style>
 
 </head>
 
-    <div>
-        <div>RWAD</div>
-    </div>
-
 <body>
 
+    <div class="circle-container">
+        <div class="text">RWAD</div>
+    </div>
 </body>
 </html>

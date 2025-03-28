@@ -10,34 +10,45 @@
         section{
             overflow: hidden;
             width: 100%;
-            height: 500px;
-        }
-        div{
-            width: 100%;
-            height: 100%;
+            height: 700px;
             position: relative;
+        }
+        .slider{
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            display: flex;
 
             animation-name: slider_animation;
-            animation-duration: 5s;
+            animation-duration: 12s;
+            /*animation-timing-function: linear;*/
+            animation-iteration-count: infinite;
             animation-direction: alternate;
+        }
+        .slider img{
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
         }
 
         @keyframes slider_animation{
-            0%{
-                left: 0;
+            0%, 25%{
+                /*margin-left: 0;*/
+                transform: translate(0);
             }
-            25%{
-                left: -100%;
+            25%, 50%{
+                /*margin-left: -100%;*/
+                transform: translateX(-100vw);
             }
-            50%{
+            50%, 75%{
+                /*margin-left: -200%;*/
+                transform: translateX(-200vw);
+            }
+            75%, 100%{
+                /*margin-left: -300%;*/
+                transform: translateX(-300vw);
+            }
 
-            }
-            75%{
-
-            }
-            100%{
-
-            }
         }
     </style>
 </head>
@@ -45,8 +56,14 @@
 <body>
 
     <section>
-        <div><img src="assets/images/keagan-henman-jr6P9SoJMNs-unsplash.jpg" width="1500px"></div>
-        <div><img src="assets/images/freddie-marriage-X9Za3VjKIgc-unsplash.jpg" width="1500px"></div>
+
+        <div class="slider">
+            <img src="assets/images/photo_6282723309741262129_y.jpg" width="1500px">
+            <img src="assets/images/photo_6282723309741262130_y.jpg" width="1500px">
+            <img src="assets/images/photo_6282723309741262131_y.jpg" width="1500px">
+            <img src="assets/images/photo_6282723309741262132_w.jpg" width="1500px">
+        </div>
+
     </section>
 
 </body>
